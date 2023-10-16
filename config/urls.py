@@ -24,6 +24,7 @@ urlpatterns = [
     path('pybo/', include('pybo.urls')),
     path('encore/', include('encore.urls')),
     path('common/', include('common.urls')),
-    path('', main),
+    # path('', main),
+    path('', include('pybo.urls')),
     path('', views.index, name='index'),
 ]
